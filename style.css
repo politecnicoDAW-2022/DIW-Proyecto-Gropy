@@ -1,0 +1,73 @@
+:root {
+    --color-primary: #222;
+    --color-secondary: #333;
+    --color-tertiary: #fff;
+    --color-quaternary: #ccc;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(./assets/fonts/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: var(--color-quaternary);
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 20px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+}
+
+header .login-register {
+    cursor: pointer;
+    transition: 0.3s ease;
+    padding: 10px;
+}
+
+header .login-register:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
+}
+
+/* Nav Menu */
+nav {
+    width: 100%;
+    max-height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary);
+}
+
+nav a {
+    transition: 0.3s ease;
+    background: var(--color-secondary);
+    color: var(--color-tertiary);
+    font-size: 20px;
+    border-top: 4px solid var(--color-secondary);
+    border-bottom: 4px solid var(--color-secondary);
+    padding: 15px 0;
+    margin: 0 15px;
+}
+nav a:hover {
+    border-top: 4px solid var(--color-tertiary);
+    border-bottom: 4px solid var(--color-tertiary);
+    padding: 10px 0;
+}
