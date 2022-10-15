@@ -55,6 +55,8 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: var(--color-secondary);
+    position: sticky;
+    top: 0;
 }
 
 nav a {
@@ -71,11 +73,4 @@ nav a:hover {
     border-top: 4px solid var(--color-tertiary);
     border-bottom: 4px solid var(--color-tertiary);
     padding: 10px 0;
-}
-
-.fixed-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
 }
