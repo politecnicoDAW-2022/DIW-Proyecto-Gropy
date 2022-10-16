@@ -3,3 +3,5 @@
 ![nav-jesus](./assets/images/nav-Jesus.gif)
 
 PD: El logo es inventado se tiene que cambiar
+
+![color-palette](./assets/images/colorPalette.png)
