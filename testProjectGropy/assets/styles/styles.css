@@ -1,0 +1,57 @@
+:root {
+    --colorPrimary: #316B83;
+    --colorSecundary: #6D8299;
+    --colorThird: #D5BFBF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+header {
+    background: var(--colorPrimary);
+    padding: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1:hover {
+    color: var(--colorThird);
+    transition: 1s;
+}
+
+header .login {
+    cursor: pointer;
+    padding: 10px;
+}
+
+header .login:hover {
+    transition: 0.3s ease;
+    color: var(--colorThird);
+    font-size: 21px;
+}
+
+nav {
+    width: 100%;
+    max-height: 40px;
+    background: var(--colorSecundary);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 13em; /*separator*/
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    font-size:large;
+    color: var(--colorThird);
+    transition: 0.3s ease;
+}
