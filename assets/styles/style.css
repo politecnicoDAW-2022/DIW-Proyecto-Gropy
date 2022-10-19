@@ -39,17 +39,41 @@ nav {
     font-size: larger;
 }
 
-nav a i {
-    color: var(--color-secondary);
-    font-size: 1rem;
-    margin: 0 1rem 0 0;
-}
-
 a,
 a:visited,
 a:hover,
 a:active {
     color: inherit;
+}
+
+nav a {
+    position: relative;
+    padding: 6px 0;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-secondary);
+    transition: 0.2s;
+}
+
+nav a:hover i {
+    transform: rotate(-5deg);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a i {
+    color: var(--color-secondary);
+    font-size: 1rem;
+    margin-right: 6px;
 }
 
 .logo {
