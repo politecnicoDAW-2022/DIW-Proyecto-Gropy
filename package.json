@@ -1,22 +1,27 @@
 {
-  "name": "diw-proyecto-gropy",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/issues"
-  },
-  "homepage": "https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy#readme",
-  "devDependencies": {
-    "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
-    "husky": "^8.0.1",
-    "prettier": "^2.7.1"
-  }
+    "name": "diw-proyecto-gropy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy.git"
+    },
+    "scripts": {
+        "precommit": "pretty-quick --staged",
+        "prepare": "husky install .husky"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/issues"
+    },
+    "homepage": "https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy#readme",
+    "devDependencies": {
+        "@commitlint/cli": "^17.1.2",
+        "@commitlint/config-conventional": "^17.1.0",
+        "husky": "^8.0.1",
+        "prettier": "^2.7.1",
+        "pretty-quick": "^3.1.3"
+    }
 }
