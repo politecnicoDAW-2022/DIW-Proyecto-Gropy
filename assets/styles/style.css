@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
-
 :root {
     --color-primary: #eefcf8;
-    --color-secondary: #00ABB3;
+    --color-secondary: #00abb3;
     --color-tertiary: #3c4048;
-    --color-quaternary: #FFC300;
+    --color-quaternary: #ffc300;
+}
+
+@font-face {
+    font-family: 'Monserrat';
+    src: url('assets/fonts/Montserrat-Regular.ttf');
 }
 
 * {
@@ -12,10 +15,10 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Monserrat', sans-serif;
 }
 
-body{
+body {
     background-color: var(--color-primary);
 }
 
@@ -36,31 +39,34 @@ nav {
     font-size: larger;
 }
 
-nav a{
+nav a {
     transform: scale(1);
-    transition: transform .30s;
+    transition: transform 0.3s;
 }
 
-nav a:hover{
+nav a:hover {
     color: var(--color-secondary);
     transform: scale(1.3);
     font-weight: bold;
-    transition: transform .30s;
+    transition: transform 0.3s;
 }
 
-a, a:visited, a:hover, a:active {
+a,
+a:visited,
+a:hover,
+a:active {
     color: inherit;
 }
 
-.logo{
+.logo {
     width: 200px;
 }
 
-.logo img{
+.logo img {
     width: 100%;
 }
 
-.login-register{
+.login-register {
     height: 50px;
     width: 180px;
     background-color: var(--color-secondary);
@@ -73,13 +79,10 @@ a, a:visited, a:hover, a:active {
     font-weight: 500;
 }
 
-.login-register:hover{
-    background: linear-gradient(to right, var(--color-secondary), var(--color-quaternary));
+.login-register:hover {
+    background: linear-gradient(
+        to right,
+        var(--color-secondary),
+        var(--color-quaternary)
+    );
 }
-
-
-
-
-
-
-
