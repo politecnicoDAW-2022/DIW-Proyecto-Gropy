@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="assets/images/favicon.png"
+            type="image/png" />
+        <link rel="stylesheet" href="./node_modules/reset-css/reset.css" />
+
+        <title>Gropy</title>
+    </head>
+    <body>
+        <main>
+            <!-- Log In Form -->
+            <form class="login-form">
+                <h1>Log In</h1>
+                <label for="user-mail">User/Mail</label>
+                <input
+                    type="text"
+                    id="user-mail"
+                    name="user-mail"
+                    placeholder="User/Mail" />
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password" />
+                <a href="#">Forgot Password</a>
+                <input type="submit" value="Log In" />
+                <p>Don't have an account? <a href="#">Register now</a></p>
+            </form>
+
+            <!-- Register Form -->
+            <form class="register-form">
+                <section>
+                    <h1>Create your account</h1>
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Name" />
+                    <label for="lastName">Last Name</label>
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        placeholder="Last Name" />
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email" />
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Password" />
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm Password" />
+                </section>
+                <section>
+                    <h1>Choose your plan</h1>
+                    <article>
+                        <input type="radio" id="plan1" name="plan" />
+                        <label for="plan1">
+                            <h3>Plan 1</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quisquam, quae.
+                            </p>
+                        </label>
+                    </article>
+                    <article>
+                        <input type="radio" id="plan2" name="plan" />
+                        <label for="plan2">
+                            <h3>Plan 2</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quisquam, quae.
+                            </p>
+                        </label>
+                    </article>
+                    <article>
+                        <input type="radio" id="plan3" name="plan" />
+                        <label for="plan3">
+                            <h3>Plan 3</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quisquam, quae.
+                            </p>
+                        </label>
+                    </article>
+                </section>
+            </form>
+        </main>
+    </body>
+</html>
