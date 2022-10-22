@@ -32,6 +32,7 @@ header {
     position: sticky;
     top: 0;
     color: var(--color-tertiary);
+    transition: 0.2s;;
 }
 
 nav {
@@ -81,10 +82,12 @@ nav a i {
 
 .logo {
     width: 200px;
+    transition: 0.2s;
 }
 
 .logo img {
     width: 100%;
+    transition: 0.2s;
 }
 
 .login-register {
