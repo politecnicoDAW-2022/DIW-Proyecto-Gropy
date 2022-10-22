@@ -9,7 +9,8 @@
     },
     "scripts": {
         "precommit": "pretty-quick --staged",
-        "prepare": "husky install .husky"
+        "prepare": "husky install .husky",
+        "create:changelog": "auto-changelog -p && git add CHANGELOG.md"
     },
     "author": "",
     "license": "ISC",
