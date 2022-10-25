@@ -32,22 +32,14 @@ jobs:
     prettier:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout
-              uses: actions/checkout@v2
-              with:
-                  # Make sure the actual branch is checked out when running on pull requests
-                  ref: ${{ github.head_ref }}
+            - uses: actions/checkout@v1
+            - uses: actions/npm-install@v1
 
-            - name: Prettify code
-              uses: creyD/prettier_action@v4.2
-              with:
-                  # This part is also where you can pass other options, for example:
-                  prettier_options: --write **/*.{js,md}
+            - run: npm run precommit
 
     # Single deploy job since we're just deploying
     deploy:
         needs: [prettier]
-        if: ${{ github.event_name == 'push' }}
         environment:
             name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}
