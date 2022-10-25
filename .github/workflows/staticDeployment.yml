@@ -48,7 +48,7 @@ jobs:
 
     # Single deploy job since we're just deploying
     deploy:
-        if: github.event_name == 'push''
+        if: ${{ github.event_name == 'push' }}
         needs: [prettier]
         environment:
             name: github-pages
