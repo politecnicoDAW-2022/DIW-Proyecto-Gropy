@@ -2,6 +2,10 @@
 
 #### 0.1.0
 
+- feat: implements about us page [`#31`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/31)
+- feat: add hook changelog [`#29`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/29)
+- feat: added faqs html [`#30`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/30)
+- feat(auth): add html [`#28`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/28)
 - feat(html): added html to home and plans pages [`#27`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/27)
 - fix: remove wrong package of resert.css [`#26`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/26)
 - feat: added reset.css [`#17`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/17)
