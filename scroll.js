@@ -1,6 +1,4 @@
-window.onscroll = function () {
-    scrollingAnimation();
-};
+window.onscroll = scrollingAnimation;
 
 function scrollingAnimation() {
     const winScroll =
