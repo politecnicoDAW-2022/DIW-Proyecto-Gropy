@@ -2,6 +2,11 @@
 
 #### 0.1.0
 
+- chore(github-actions): testing deploy [`#46`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/46)
+- chore(github-actions): testing deploy [`#45`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/45)
+- chore(github-actions): testing deploy [`#44`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/44)
+- chore(github-actions): testing deploy [`#43`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/43)
+- chore(github-actions): added prettier before deploy [`#41`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/41)
 - feat: implements about us page [`#31`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/31)
 - feat: add hook changelog [`#29`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/29)
 - feat: added faqs html [`#30`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/30)

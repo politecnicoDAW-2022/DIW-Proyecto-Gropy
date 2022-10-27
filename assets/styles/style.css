@@ -107,3 +107,17 @@ nav a i {
         var(--color-quaternary)
     );
 }
+
+.separator {
+    height: 4px;
+    width: 0;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    background-color: var(--color-secondary);
+    z-index: 5;
+}
+
+section {
+    height: 100vh;
+}
