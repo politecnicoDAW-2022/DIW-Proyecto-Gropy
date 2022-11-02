@@ -5,5 +5,6 @@
     "singleQuote": true,
     "bracketSpacing": true,
     "bracketSameLine": true,
-    "arrowParens": "always"
+    "arrowParens": "always",
+    "order": "alphabetical"
 }
