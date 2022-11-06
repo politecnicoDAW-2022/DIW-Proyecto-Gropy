@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -22,7 +21,6 @@ function scrollFunction() {
 
     }
 }
-=======
 window.onscroll = scrollingAnimation;
 
 function scrollingAnimation() {
@@ -35,4 +33,3 @@ function scrollingAnimation() {
     document.getElementById('separator-scroll').style.width = scrolled + '%';
     console.log(separator);
 }
->>>>>>> main
