@@ -29,17 +29,23 @@ class ScrollAnimations {
             document.body.scrollTop > 50 ||
             document.documentElement.scrollTop > 50
         ) {
-            this.GUI.logo.style.paddingTop = '15px';
-            this.GUI.logo.style.width = '70%';
-            this.GUI.logo.style.marginLeft = '250px';
-            this.GUI.logo.style.objectFit = 'cover';
-            this.GUI.logo.style.objectPosition = '90px';
+            this.GUI.header.classList.replace(
+                'header-scroll-animation-off',
+                'header-scroll-animation-on'
+            );
+            this.GUI.logo.classList.replace(
+                'logo-scroll-animation-off',
+                'logo-scroll-animation-on'
+            );
         } else {
-            this.GUI.logo.style.paddingTop = '40px';
-            this.GUI.logo.style.width = '100%';
-            this.GUI.logo.style.marginLeft = '0px';
-            this.GUI.logo.style.objectFit = '';
-            this.GUI.logo.style.objectPosition = '';
+            this.GUI.header.classList.replace(
+                'header-scroll-animation-on',
+                'header-scroll-animation-off'
+            );
+            this.GUI.logo.classList.replace(
+                'logo-scroll-animation-on',
+                'logo-scroll-animation-off'
+            );
         }
     };
 }
