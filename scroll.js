@@ -1,8 +1,7 @@
-window.onscroll = function() {scrollFunction()};
+window.onscroll = scrollFunction;
 
 function scrollFunction() {
 
-    let logoContainer = document.querySelector(".logo")
     let logo = document.querySelector(".logo img");
     let header = document.querySelector("header");
 
