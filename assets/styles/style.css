@@ -81,10 +81,12 @@ nav a i {
 
 .logo {
     width: 200px;
+    transition: 0.2s;
 }
 
 .logo img {
     width: 100%;
+    transition: 0.2s;
 }
 
 .login-register {
