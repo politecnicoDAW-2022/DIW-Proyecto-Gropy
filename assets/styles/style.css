@@ -11,11 +11,11 @@
 }
 
 * {
+    box-sizing: border-box;
+    font-family: 'Monserrat', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Monserrat', sans-serif;
 }
 
 body {
@@ -23,24 +23,23 @@ body {
 }
 
 header {
-    width: 80%;
-    margin: 0 auto;
-    padding: 40px 0;
+    align-items: center;
+    color: var(--color-tertiary);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin: 0 auto;
+    padding: 40px 0;
     position: sticky;
     top: 0;
-    color: var(--color-tertiary);
-    transition: 0.2s;;
+    width: 80%;
 }
 
 nav {
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
     align-items: center;
+    display: flex;
     font-size: larger;
+    justify-content: space-around;
+    width: 50%;
 }
 
 a,
@@ -51,19 +50,19 @@ a:active {
 }
 
 nav a {
-    position: relative;
     padding: 6px 0;
+    position: relative;
 }
 
 nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
     background-color: var(--color-secondary);
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
     transition: 0.2s;
+    width: 0;
 }
 
 nav a:hover i {
@@ -91,16 +90,16 @@ nav a i {
 }
 
 .login-register {
-    height: 50px;
-    width: 180px;
     background-color: var(--color-secondary);
-    text-align: center;
-    line-height: 50px;
-    font-size: large;
+    border-radius: 5px;
     color: var(--color-primary);
     cursor: pointer;
-    border-radius: 5px;
+    font-size: large;
     font-weight: 500;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 180px;
 }
 
 .login-register:hover {
@@ -109,4 +108,18 @@ nav a i {
         var(--color-secondary),
         var(--color-quaternary)
     );
+}
+
+.separator {
+    background-color: var(--color-secondary);
+    height: 4px;
+    left: 0%;
+    position: sticky;
+    top: 0%;
+    width: 0;
+    z-index: 5;
+}
+
+section {
+    height: 100vh;
 }
