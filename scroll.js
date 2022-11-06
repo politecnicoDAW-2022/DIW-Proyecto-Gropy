@@ -21,8 +21,7 @@ class ScrollAnimations {
             document.documentElement.scrollHeight -
             document.documentElement.clientHeight;
         const scrolled = (winScroll / height) * 100;
-        document.getElementById('separator-scroll').style.width =
-            scrolled + '%';
+        this.GUI.separator.style.width = scrolled + '%';
     };
 
     logo = () => {
