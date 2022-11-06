@@ -1,3 +1,3 @@
-import { ScrollAnimations } from './scroll.js';
+import { ScrollAnimations } from './assets/js/scroll.js';
 
 const sa = new ScrollAnimations();
