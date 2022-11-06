@@ -1,6 +1,6 @@
 class ScrollAnimations {
     GUI = {
-        logo: document.querySelector('.logo img'),
+        logo: document.querySelector('#logo img'),
         header: document.querySelector('header'),
         separator: document.querySelector('#separator-scroll'),
     };
