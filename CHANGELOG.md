@@ -2,6 +2,8 @@
 
 #### 0.1.0
 
+- Feat(change header size when scrolling) [`#34`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/34)
+- Add github action to sort alphabetical atributes on css [`#51`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/51)
 - feat: added scroll to show progress [`#49`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/49)
 - chore(github-actions): testing deploy [`#46`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/46)
 - chore(github-actions): testing deploy [`#45`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/45)

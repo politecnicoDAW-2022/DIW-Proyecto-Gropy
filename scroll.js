@@ -1,34 +1,48 @@
-window.onscroll = scrollFunction;
+class ScrollAnimations {
+    GUI = {
+        logo: document.querySelector('.logo img'),
+        header: document.querySelector('header'),
+        separator: document.querySelector('#separator-scroll'),
+    };
 
-function scrollFunction() {
-
-    let logo = document.querySelector(".logo img");
-    let header = document.querySelector("header");
-
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        header.style.paddingTop = "15px"
-        logo.style.width = "70%";
-        logo.style.marginLeft = "250px"
-        logo.style.objectFit = "cover";
-        logo.style.objectPosition =  "90px"; 
-    }else{
-        header.style.paddingTop = "40px"
-        logo.style.width = "100%";
-        logo.style.marginLeft = "0px"
-        logo.style.objectFit = "";
-        logo.style.objectPosition =  "";
-
+    constructor() {
+        this.addEvents();
     }
-}
-window.onscroll = scrollingAnimation;
 
-function scrollingAnimation() {
-    const winScroll =
-        document.body.scrollTop || document.documentElement.scrollTop;
-    const height =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-    document.getElementById('separator-scroll').style.width = scrolled + '%';
-    console.log(separator);
+    addEvents() {
+        window.addEventListener('scroll', this.progressBar);
+        window.addEventListener('scroll', this.logo);
+    }
+
+    progressBar = () => {
+        const winScroll =
+            document.body.scrollTop || document.documentElement.scrollTop;
+        const height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById('separator-scroll').style.width =
+            scrolled + '%';
+    };
+
+    logo = () => {
+        if (
+            document.body.scrollTop > 50 ||
+            document.documentElement.scrollTop > 50
+        ) {
+            this.GUI.logo.style.paddingTop = '15px';
+            this.GUI.logo.style.width = '70%';
+            this.GUI.logo.style.marginLeft = '250px';
+            this.GUI.logo.style.objectFit = 'cover';
+            this.GUI.logo.style.objectPosition = '90px';
+        } else {
+            this.GUI.logo.style.paddingTop = '40px';
+            this.GUI.logo.style.width = '100%';
+            this.GUI.logo.style.marginLeft = '0px';
+            this.GUI.logo.style.objectFit = '';
+            this.GUI.logo.style.objectPosition = '';
+        }
+    };
 }
+
+export { ScrollAnimations };
