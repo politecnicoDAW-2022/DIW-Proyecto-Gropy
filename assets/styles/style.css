@@ -80,12 +80,12 @@ nav a i {
 }
 
 .logo {
-    transition: 0.2s;
     width: 200px;
 }
 
 .logo img {
-    transition: 0.2s;
+    transition: 0.3s;
+    width: 100%;
 }
 
 .login-register {
@@ -129,22 +129,15 @@ section {
     is defined.
 */
 
-.header-scroll-animation-on {
+header.header-scroll-animation {
     padding-top: 15px;
+    transition: 0.3s;
 }
 
-.header-scroll-animation-off {
-    padding-top: 40px;
-}
-
-.logo-scroll-animation-on {
+.logo img.logo-scroll-animation {
     margin-left: 250px;
     object-fit: cover;
     object-position: 90px;
+    transition: 0.3s;
     width: 70%;
-}
-
-.logo-scroll-animation-off {
-    margin-left: 0px;
-    width: 100%;
 }

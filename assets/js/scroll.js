@@ -29,23 +29,11 @@ class ScrollAnimations {
             document.body.scrollTop > 50 ||
             document.documentElement.scrollTop > 50
         ) {
-            this.GUI.header.classList.replace(
-                'header-scroll-animation-off',
-                'header-scroll-animation-on'
-            );
-            this.GUI.logo.classList.replace(
-                'logo-scroll-animation-off',
-                'logo-scroll-animation-on'
-            );
+            this.GUI.header.classList.add('header-scroll-animation');
+            this.GUI.logo.classList.add('logo-scroll-animation');
         } else {
-            this.GUI.header.classList.replace(
-                'header-scroll-animation-on',
-                'header-scroll-animation-off'
-            );
-            this.GUI.logo.classList.replace(
-                'logo-scroll-animation-on',
-                'logo-scroll-animation-off'
-            );
+            this.GUI.header.classList.remove('header-scroll-animation');
+            this.GUI.logo.classList.remove('logo-scroll-animation');
         }
     };
 }
