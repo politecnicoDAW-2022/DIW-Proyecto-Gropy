@@ -81,12 +81,11 @@ nav a i {
 
 .logo {
     width: 200px;
-    transition: 0.2s;
 }
 
 .logo img {
+    transition: 0.3s;
     width: 100%;
-    transition: 0.2s;
 }
 
 .login-register {
@@ -122,4 +121,23 @@ nav a i {
 
 section {
     height: 100vh;
+}
+
+/*
+    TO-DO: Move the following lines to an "scroll 
+    animation styles" file when CSS files structure
+    is defined.
+*/
+
+header.header-scroll-animation {
+    padding-top: 15px;
+    transition: 0.3s;
+}
+
+.logo img.logo-scroll-animation {
+    margin-left: 250px;
+    object-fit: cover;
+    object-position: 90px;
+    transition: 0.3s;
+    width: 70%;
 }
