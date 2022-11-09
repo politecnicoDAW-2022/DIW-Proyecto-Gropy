@@ -10,7 +10,8 @@
     "scripts": {
         "precommit": "pretty-quick --staged",
         "prepare": "husky install .husky",
-        "create:changelog": "auto-changelog -p -t changelog-template.hbs && git add CHANGELOG.md"
+        "create:changelog": "auto-changelog -p -t changelog-template.hbs && git add CHANGELOG.md",
+        "sass": "sass --watch assets/styles/main.scss assets/styles/style.css"
     },
     "author": "",
     "license": "ISC",
