@@ -1,0 +1,17 @@
+@use '../00-settings/fonts';
+
+* {
+    box-sizing: border-box;
+    font-family: fonts.$monserrat;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-primary);
+}
+
+section {
+    height: 100vh;
+}

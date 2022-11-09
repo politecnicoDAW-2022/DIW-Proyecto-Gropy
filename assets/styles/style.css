@@ -1,15 +1,7 @@
-:root {
-    --color-primary: #eefcf8;
-    --color-secondary: #00abb3;
-    --color-tertiary: #3c4048;
-    --color-quaternary: #ffc300;
-}
-
 @font-face {
     font-family: 'Monserrat';
-    src: url('assets/fonts/Montserrat-Regular.ttf');
+    src: url('/assets/fonts/Montserrat-Regular.ttf');
 }
-
 * {
     box-sizing: border-box;
     font-family: 'Monserrat', sans-serif;
@@ -22,9 +14,13 @@ body {
     background-color: var(--color-primary);
 }
 
+section {
+    height: 100vh;
+}
+
 header {
     align-items: center;
-    color: var(--color-tertiary);
+    color: #3c4048;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -33,13 +29,64 @@ header {
     top: 0;
     width: 80%;
 }
-
-nav {
+header .logo {
+    width: 200px;
+}
+header .logo img {
+    transition: 0.3s;
+    width: 100%;
+}
+header nav {
     align-items: center;
     display: flex;
     font-size: larger;
     justify-content: space-around;
     width: 50%;
+}
+header nav a {
+    padding: 6px 0;
+    position: relative;
+}
+header nav a i {
+    color: #00abb3;
+    font-size: 1rem;
+    margin-right: 6px;
+}
+header nav a::after {
+    background-color: #00abb3;
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: 0.2s;
+    width: 0;
+}
+header nav a:visited,
+header nav a:hover,
+header nav a:active {
+    color: inherit;
+}
+header nav a:hover i {
+    transform: rotate(-5deg);
+}
+header nav a:hover::after {
+    width: 100%;
+}
+header .login-register {
+    background-color: #00abb3;
+    border-radius: 5px;
+    color: #eefcf8;
+    cursor: pointer;
+    font-size: large;
+    font-weight: 500;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 180px;
+}
+header .login-register:hover {
+    background: linear-gradient(to right, #00abb3, #ffc300);
 }
 
 a,
@@ -49,68 +96,8 @@ a:active {
     color: inherit;
 }
 
-nav a {
-    padding: 6px 0;
-    position: relative;
-}
-
-nav a::after {
-    background-color: var(--color-secondary);
-    bottom: 0;
-    content: '';
-    height: 2px;
-    left: 0;
-    position: absolute;
-    transition: 0.2s;
-    width: 0;
-}
-
-nav a:hover i {
-    transform: rotate(-5deg);
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-
-nav a i {
-    color: var(--color-secondary);
-    font-size: 1rem;
-    margin-right: 6px;
-}
-
-.logo {
-    width: 200px;
-}
-
-.logo img {
-    transition: 0.3s;
-    width: 100%;
-}
-
-.login-register {
-    background-color: var(--color-secondary);
-    border-radius: 5px;
-    color: var(--color-primary);
-    cursor: pointer;
-    font-size: large;
-    font-weight: 500;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    width: 180px;
-}
-
-.login-register:hover {
-    background: linear-gradient(
-        to right,
-        var(--color-secondary),
-        var(--color-quaternary)
-    );
-}
-
 .separator {
-    background-color: var(--color-secondary);
+    background-color: #00abb3;
     height: 4px;
     left: 0%;
     position: sticky;
@@ -119,17 +106,7 @@ nav a i {
     z-index: 5;
 }
 
-section {
-    height: 100vh;
-}
-
-/*
-    TO-DO: Move the following lines to an "scroll 
-    animation styles" file when CSS files structure
-    is defined.
-*/
-
-header.header-scroll-animation {
+header .header-scroll-animation {
     padding-top: 15px;
     transition: 0.3s;
 }

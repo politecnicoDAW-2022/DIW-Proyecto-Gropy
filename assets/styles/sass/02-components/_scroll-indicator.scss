@@ -1,0 +1,11 @@
+@use '../00-settings/colors';
+
+.separator {
+    background-color: colors.$color-secondary;
+    height: 4px;
+    left: 0%;
+    position: sticky;
+    top: 0%;
+    width: 0;
+    z-index: 5;
+}
