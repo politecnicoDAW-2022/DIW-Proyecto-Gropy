@@ -31,6 +31,6 @@
         "sass": "^1.56.1"
     },
     "dependencies": {
-        "reset-css": "^5.0.1"
+        "scss-reset": "^1.2.2"
     }
 }
