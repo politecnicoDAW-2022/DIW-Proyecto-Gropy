@@ -1,0 +1,18 @@
+header {
+    .header-scroll-animation {
+        padding-top: 15px;
+        transition: 0.3s;
+    }
+}
+
+.logo {
+    img {
+        &.logo-scroll-animation {
+            margin-left: 250px;
+            object-fit: cover;
+            object-position: 90px;
+            transition: 0.3s;
+            width: 70%;
+        }
+    }
+}

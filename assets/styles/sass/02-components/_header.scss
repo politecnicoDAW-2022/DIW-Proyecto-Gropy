@@ -1,0 +1,96 @@
+@use '../00-settings/colors';
+
+header {
+    align-items: center;
+    color: colors.$color-tertiary;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: sticky;
+    top: 0;
+    width: 80%;
+
+    .logo {
+        width: 200px;
+
+        img {
+            transition: 0.3s;
+            width: 100%;
+        }
+    }
+
+    nav {
+        align-items: center;
+        display: flex;
+        font-size: larger;
+        justify-content: space-around;
+        width: 50%;
+
+        a {
+            padding: 6px 0;
+            position: relative;
+
+            i {
+                color: colors.$color-secondary;
+                font-size: 1rem;
+                margin-right: 6px;
+            }
+
+            &::after {
+                background-color: colors.$color-secondary;
+                bottom: 0;
+                content: '';
+                height: 2px;
+                left: 0;
+                position: absolute;
+                transition: 0.2s;
+                width: 0;
+            }
+
+            &:visited,
+            &:hover,
+            &:active {
+                color: inherit;
+            }
+
+            &:hover {
+                i {
+                    transform: rotate(-5deg);
+                }
+
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .login-register {
+        background-color: colors.$color-secondary;
+        border-radius: 5px;
+        color: colors.$color-primary;
+        cursor: pointer;
+        font-size: large;
+        font-weight: 500;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        width: 180px;
+
+        &:hover {
+            background: linear-gradient(
+                to right,
+                colors.$color-secondary,
+                colors.$color-quaternary
+            );
+        }
+    }
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
