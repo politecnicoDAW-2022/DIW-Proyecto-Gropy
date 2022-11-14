@@ -2,6 +2,7 @@
 
 #### 0.1.0
 
+- feat: Sass [`#53`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/53)
 - refactor: scroll animations [`#52`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/52)
 - Feat(change header size when scrolling) [`#34`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/34)
 - Add github action to sort alphabetical atributes on css [`#51`](https://github.com/politecnicoDAW-2022/DIW-Proyecto-Gropy/pull/51)
